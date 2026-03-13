@@ -78,10 +78,10 @@
         // 16개의 카드 초기화 및 랜덤 셔플 함수
         function generateInitialCards() {
             let pool = [];
-            for(let i=0; i<4; i++) pool.push({team: 1, name: '1팀', emoji: '🥇', color: 'text-yellow-400', bg: 'bg-yellow-500/20', border: 'border-yellow-500/50'});
-            for(let i=0; i<4; i++) pool.push({team: 2, name: '2팀', emoji: '🥈', color: 'text-slate-300', bg: 'bg-slate-300/20', border: 'border-slate-300/50'});
-            for(let i=0; i<4; i++) pool.push({team: 3, name: '3팀', emoji: '🥉', color: 'text-amber-500', bg: 'bg-amber-600/20', border: 'border-amber-600/50'});
-            for(let i=0; i<4; i++) pool.push({team: 4, name: '4팀', emoji: '😅', color: 'text-emerald-400', bg: 'bg-emerald-500/20', border: 'border-emerald-500/50'});
+            for(let i=0; i<4; i++) pool.push({team: 1, name: '1팀', emoji: '🐯', color: 'text-yellow-400', bg: 'bg-yellow-500/20', border: 'border-yellow-500/50'});
+            for(let i=0; i<4; i++) pool.push({team: 2, name: '2팀', emoji: '🦅', color: 'text-slate-300', bg: 'bg-slate-300/20', border: 'border-slate-300/50'});
+            for(let i=0; i<4; i++) pool.push({team: 3, name: '3팀', emoji: '🐻', color: 'text-amber-500', bg: 'bg-amber-600/20', border: 'border-amber-600/50'});
+            for(let i=0; i<4; i++) pool.push({team: 4, name: '4팀', emoji: '🦖', color: 'text-emerald-400', bg: 'bg-emerald-500/20', border: 'border-emerald-500/50'});
 
             // Fisher-Yates 셔플
             for (let i = pool.length - 1; i > 0; i--) {
@@ -338,10 +338,10 @@
             });
 
             const teamStyles = {
-                1: { name: '1팀', emoji: '🥇', bg: 'bg-yellow-500/10', border: 'border-yellow-500/30', title: 'text-yellow-400' },
-                2: { name: '2팀', emoji: '🥈', bg: 'bg-slate-400/10', border: 'border-slate-400/30', title: 'text-slate-300' },
-                3: { name: '3팀', emoji: '🥉', bg: 'bg-amber-600/10', border: 'border-amber-600/30', title: 'text-amber-500' },
-                4: { name: '4팀', emoji: '😅', bg: 'bg-emerald-500/10', border: 'border-emerald-500/30', title: 'text-emerald-400' }
+                1: { name: '1팀', emoji: '🐯', bg: 'bg-yellow-500/10', border: 'border-yellow-500/30', title: 'text-yellow-400' },
+                2: { name: '2팀', emoji: '🦅', bg: 'bg-slate-400/10', border: 'border-slate-400/30', title: 'text-slate-300' },
+                3: { name: '3팀', emoji: '🐻', bg: 'bg-amber-600/10', border: 'border-amber-600/30', title: 'text-amber-500' },
+                4: { name: '4팀', emoji: '🦖', bg: 'bg-emerald-500/10', border: 'border-emerald-500/30', title: 'text-emerald-400' }
             };
 
             let listHTML = '';
